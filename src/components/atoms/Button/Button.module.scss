@@ -1,0 +1,29 @@
+@import '@/assets/scss/variables.scss';
+
+.button{
+  width: 296px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  border-radius: 12px;
+  background-color: $orange;
+  font-size: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease-out;
+
+  &:hover{
+    background-color: $orangeHover;
+  }
+
+  &:active{
+    background-color: $orangePressed;
+  }
+}
+
+@media screen and (max-width: $smDevice) {
+  .button{
+    width: 100%;
+  }
+}
