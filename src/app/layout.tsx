@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import { Inter } from "next/font/google";
+import LevelContextProvider from "./LevelContextProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
-      <body>{children}</body>
+      <LevelContextProvider>
+        <body>{children}</body>
+      </LevelContextProvider>
     </html>
   );
 }

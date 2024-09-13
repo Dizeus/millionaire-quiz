@@ -1,0 +1,56 @@
+{
+  "questions": [
+    {
+      "question": "How old your elder brother was 10 years before you was born, mate?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "10 years"
+        },
+        {
+          "letter": "b",
+          "text": "11 years"
+        },
+        {
+          "letter": "c",
+          "text": "12 years"
+        },
+        {
+          "letter": "d",
+          "text": "14 years"
+        }
+      ],
+      "answer": {
+        "letters": ["a"],
+        "operator": "only"
+      },
+      "prize": 500
+    },
+    {
+      "question": "Second question?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "blue"
+        },
+        {
+          "letter": "b",
+          "text": "red"
+        },
+        {
+          "letter": "c",
+          "text": "green"
+        },
+        {
+          "letter": "d",
+          "text": "14 years"
+        }
+      ],
+      "answer": {
+        "letters": ["a"],
+        "operator": "only"
+      },
+      "prize": 1000
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+@import "@/assets/scss/variables.scss";
+.menu{
+  flex: 0 1 376px;
+  display: flex;
+  row-gap: 8px;
+  flex-direction: column-reverse;
+  justify-content: center;
+  min-height: 100vh;
+}
