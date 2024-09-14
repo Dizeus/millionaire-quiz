@@ -1,0 +1,12 @@
+@import '@/assets/scss/variables.scss';
+
+.burger{
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 10;
+  @media (max-width: $smDevice) {
+    display: block;
+  }
+}

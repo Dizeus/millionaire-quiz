@@ -4,12 +4,14 @@ import { IOption } from "@/utils/types/IOption";
 interface OptionProps {
   option: IOption;
   status: string | null;
+  isCheck: boolean;
   handleClickOption: (l: string) => void;
 }
 
-const Option = ({ option, status, handleClickOption }: OptionProps) => {
+const Option = ({ option, status, handleClickOption, isCheck }: OptionProps) => {
   return (
-    <div
+    <button
+      disabled={isCheck}
       onClick={()=>handleClickOption(option.letter)}
       className={`${style.container} ${style[`container_${status}`]}`}
     >
@@ -19,7 +21,7 @@ const Option = ({ option, status, handleClickOption }: OptionProps) => {
           <span className={style.text}>{option.text}</span>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 

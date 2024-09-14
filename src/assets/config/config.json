@@ -1,23 +1,23 @@
 {
   "questions": [
     {
-      "question": "How old your elder brother was 10 years before you was born, mate?",
+      "question": "Who wrote the book 'The 7 Habits of Highly Effective People'?",
       "options": [
         {
           "letter": "a",
-          "text": "10 years"
+          "text": "Stephen Covey"
         },
         {
           "letter": "b",
-          "text": "11 years"
+          "text": "Tony Robbins"
         },
         {
           "letter": "c",
-          "text": "12 years"
+          "text": "Brian Tracy"
         },
         {
           "letter": "d",
-          "text": "14 years"
+          "text": "John Maxwell"
         }
       ],
       "answer": {
@@ -27,30 +27,290 @@
       "prize": 500
     },
     {
-      "question": "Second question?",
+      "question": "Which business magnate is known for his motivational mantra, 'Fail often so you can succeed sooner'?",
       "options": [
         {
           "letter": "a",
-          "text": "blue"
+          "text": "Richard Branson"
         },
         {
           "letter": "b",
-          "text": "red"
+          "text": "Elon Musk"
         },
         {
           "letter": "c",
-          "text": "green"
+          "text": "Warren Buffett"
         },
         {
           "letter": "d",
-          "text": "14 years"
+          "text": "Mark Zuckerberg"
+        }
+      ],
+      "answer": {
+        "letters": ["b"],
+        "operator": "only"
+      },
+      "prize": 1000
+    },
+    {
+      "question": "What is the title of Napoleon Hill's famous book that discusses principles of personal success?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "Think and Grow Rich"
+        },
+        {
+          "letter": "b",
+          "text": "The Magic of Thinking Big"
+        },
+        {
+          "letter": "c",
+          "text": "How to Win Friends and Influence People"
+        },
+        {
+          "letter": "d",
+          "text": "Rich Dad Poor Dad"
         }
       ],
       "answer": {
         "letters": ["a"],
         "operator": "only"
       },
-      "prize": 1000
+      "prize": 2000
+    },
+    {
+      "question": "Which famous quote is attributed to motivational speaker Les Brown?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "'Shoot for the moon. Even if you miss it, you will land among the stars.'"
+        },
+        {
+          "letter": "b",
+          "text": "'The only limit to our realization of tomorrow is our doubts of today.'"
+        },
+        {
+          "letter": "c",
+          "text": "'You are never too old to set another goal or to dream a new dream.'"
+        },
+        {
+          "letter": "d",
+          "text": "'Shoot for the moon. If you miss, you will still be among the stars.'"
+        }
+      ],
+      "answer": {
+        "letters": ["d"],
+        "operator": "only"
+      },
+      "prize": 4000
+    },
+    {
+      "question": "In his book 'Atomic Habits', who emphasizes the importance of making small changes to achieve big goals?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "James Clear"
+        },
+        {
+          "letter": "b",
+          "text": "Charles Duhigg"
+        },
+        {
+          "letter": "c",
+          "text": "Mark Manson"
+        },
+        {
+          "letter": "d",
+          "text": "Tim Ferriss"
+        }
+      ],
+      "answer": {
+        "letters": ["a"],
+        "operator": "only"
+      },
+      "prize": 8000
+    },
+    {
+      "question": "Which American author and speaker is known for his book 'Awaken the Giant Within'?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "Tony Robbins"
+        },
+        {
+          "letter": "b",
+          "text": "Robin Sharma"
+        },
+        {
+          "letter": "c",
+          "text": "Wayne Dyer"
+        },
+        {
+          "letter": "d",
+          "text": "Deepak Chopra"
+        }
+      ],
+      "answer": {
+        "letters": ["a"],
+        "operator": "only"
+      },
+      "prize": 16000
+    },
+    {
+      "question": "What is the main principle behind the 'Law of Attraction'?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "You attract what you think about most."
+        },
+        {
+          "letter": "b",
+          "text": "Your actions define your destiny."
+        },
+        {
+          "letter": "c",
+          "text": "Your environment shapes your success."
+        },
+        {
+          "letter": "d",
+          "text": "Success comes from discipline."
+        }
+      ],
+      "answer": {
+        "letters": ["a"],
+        "operator": "only"
+      },
+      "prize": 32000
+    },
+    {
+      "question": "Which entrepreneur and author is known for the book 'The Lean Startup'?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "Eric Ries"
+        },
+        {
+          "letter": "b",
+          "text": "Peter Thiel"
+        },
+        {
+          "letter": "c",
+          "text": "Seth Godin"
+        },
+        {
+          "letter": "d",
+          "text": "Clayton Christensen"
+        }
+      ],
+      "answer": {
+        "letters": ["a"],
+        "operator": "only"
+      },
+      "prize": 64000
+    },
+    {
+      "question": "Which motivational quote is often attributed to Albert Einstein?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "'Imagination is more important than knowledge.'"
+        },
+        {
+          "letter": "b",
+          "text": "'The only way to do great work is to love what you do.'"
+        },
+        {
+          "letter": "c",
+          "text": "'Success is the sum of small efforts repeated day in and day out.'"
+        },
+        {
+          "letter": "d",
+          "text": "'You miss 100% of the shots you don't take.'"
+        }
+      ],
+      "answer": {
+        "letters": ["a"],
+        "operator": "only"
+      },
+      "prize": 125000
+    },
+    {
+      "question": "Which author wrote 'The Magic of Thinking Big'?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "David J. Schwartz"
+        },
+        {
+          "letter": "b",
+          "text": "Earl Nightingale"
+        },
+        {
+          "letter": "c",
+          "text": "Jim Rohn"
+        },
+        {
+          "letter": "d",
+          "text": "Zig Ziglar"
+        }
+      ],
+      "answer": {
+        "letters": ["a"],
+        "operator": "only"
+      },
+      "prize": 250000
+    },
+    {
+      "question": "What famous success principle is promoted by the book 'The Power of Now'?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "Living in the present moment."
+        },
+        {
+          "letter": "b",
+          "text": "Setting goals for the future."
+        },
+        {
+          "letter": "c",
+          "text": "Building strong relationships."
+        },
+        {
+          "letter": "d",
+          "text": "Practicing self-discipline."
+        }
+      ],
+      "answer": {
+        "letters": ["a"],
+        "operator": "only"
+      },
+      "prize": 500000
+    },
+    {
+      "question": "Which renowned author wrote 'Daring Greatly', which focuses on embracing vulnerability as a path to success?",
+      "options": [
+        {
+          "letter": "a",
+          "text": "Brené Brown"
+        },
+        {
+          "letter": "b",
+          "text": "Malcolm Gladwell"
+        },
+        {
+          "letter": "c",
+          "text": "Susan Cain"
+        },
+        {
+          "letter": "d",
+          "text": "Daniel Kahneman"
+        }
+      ],
+      "answer": {
+        "letters": ["a"],
+        "operator": "only"
+      },
+      "prize": 1000000
     }
   ]
 }

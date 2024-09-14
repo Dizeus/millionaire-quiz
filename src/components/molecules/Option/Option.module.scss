@@ -1,12 +1,16 @@
 @import "@/assets/scss/variables.scss";
 
-$levelHexagonWidth: 389px;
+$levelHexagonWidth: 80%;
 $levelHexagonHeight: 72px;
 $borderWidth: 1px;
 
 .container {
   flex: 1 1 50%;
   position: relative;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 20px;
+  color: $black;
   &::before {
     content: "";
     width: 100%;
@@ -55,17 +59,17 @@ $borderWidth: 1px;
       background-color: $orangeTransparent;
     }
   }
-
-  &_disabled {
-    color: $grey;
+  @media (max-width: $smDevice) {
+    font-size: 14px;
   }
 }
 
 .border {
   position: relative;
   margin: 0 auto;
+  min-width: 250px;
   width: $levelHexagonWidth;
-  height: $levelHexagonHeight;
+  min-height: $levelHexagonHeight;
   background: $grey;
   clip-path: polygon(
     6.124% 7.064%,
@@ -131,9 +135,9 @@ $borderWidth: 1px;
   align-items: center;
   padding: 10px 32px;
   column-gap: 8px;
-  width: calc($levelHexagonWidth - #{$borderWidth * 2});
+  width: calc(100% - #{$borderWidth * 2});
   height: calc($levelHexagonHeight - #{$borderWidth * 2});
-  font-size: 20px;
+  
   clip-path: polygon(
     6.124% 7.064%,
     6.124% 7.064%,
@@ -191,4 +195,5 @@ $borderWidth: 1px;
 
 .letter {
   color: $orange;
+  font-weight: 600;
 }

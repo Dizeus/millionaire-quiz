@@ -2,8 +2,6 @@ import Question from "@/components/atoms/Question/Question";
 import style from "./Game.module.scss";
 import Options from "@/components/organisms/Options/Options";
 import { IQuestion } from "@/utils/types/IQuestion";
-import { useState } from "react";
-import { compareAnswers } from "@/utils/helpers/compareAnswers";
 
 interface GameProps {
   question: IQuestion;

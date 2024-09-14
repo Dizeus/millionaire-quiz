@@ -1,5 +1,5 @@
 export enum LevelStatus {
   ACTIVE = "active",
-  PASSED = "Passed",
+  PASSED = "passed",
   INACTIVE = "inactive",
 }

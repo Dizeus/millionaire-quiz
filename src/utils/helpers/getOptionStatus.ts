@@ -1,13 +1,15 @@
+import { Operators } from "../types/enums/Operators";
 import { OptionStatus } from "../types/enums/OptionStatus";
+import { IAnswer } from "../types/IAnswer";
 
 export const getOptionStatus = (
   letter: string,
   trials: string[],
-  answers: string[]
+  answer: IAnswer
 ): OptionStatus => {
-  if (trials.includes(letter) && trials.length < answers.length) {
+  if (trials.includes(letter) && trials.length < answer.letters.length && answer.operator !== Operators.OR) {
     return OptionStatus.SELECTED;
-  } else if (trials.includes(letter) && answers.includes(letter)) {
+  } else if (trials.includes(letter) && answer.letters.includes(letter)) {
     return OptionStatus.CORRECT;
   } else if (trials.includes(letter)) {
     return OptionStatus.WRONG;
