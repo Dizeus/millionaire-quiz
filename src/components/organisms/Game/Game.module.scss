@@ -4,10 +4,19 @@
   flex: 1 1 auto;
   background-color: $greyTransparent;
   padding: 133px 80px 122px 80px;
+  @media (max-width: $smDevice) {
+    padding: 24px 0;
+  }
+}
+
+.content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media (max-width: $smDevice) {
-    padding: 24px 0;
+  row-gap: 20px;
+  height: 100%;
+  @media (min-height: 1000px) {
+    row-gap: 300px;
+    justify-content: center;
   }
 }

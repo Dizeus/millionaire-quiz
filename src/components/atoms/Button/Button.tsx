@@ -1,18 +1,15 @@
-'use client'
-import { useRouter } from "next/navigation";
 import style from "./Button.module.scss";
+import { ReactNode } from "react";
 
 interface ButtonProps {
-  text: string;
+  children: ReactNode;
+  handleOnClick: ()=>void;
 }
-const Button = ({ text }: ButtonProps) => {
-  const router = useRouter();
-
-  const handleOnClick = () => router.push("/game");
+const Button = ({ children, handleOnClick }: ButtonProps) => {
 
   return (
     <button onClick={handleOnClick} className={style.button}>
-      {text}
+      {children}
     </button>
   );
 };

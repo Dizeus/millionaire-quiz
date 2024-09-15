@@ -1,13 +1,9 @@
 import Image from "next/image";
 import hand from "@/assets/images/hand.svg";
-import { FC, ReactNode } from "react";
+import { PropsWithChildren } from "react";
 import style from "./HandLayout.module.scss"
 
-interface HandLayoutProps {
-  children: ReactNode
-}
-
-const HandLayout: FC<HandLayoutProps> = ({children}) => {
+const HandLayout = ({children}: PropsWithChildren) => {
   return (
     <div className={style.container}>
       <div

@@ -10,13 +10,15 @@ interface GameProps {
 const Game = ({ question, maxLevel }: GameProps) => {
   return (
     <div className={style.game}>
-      <Question text={question.question} />
-      <Options
-        maxLevel={maxLevel}
-        options={question.options}
-        answer={question.answer}
-        prize={question.prize}
-      />
+      <div className={style.content}>
+        <Question text={question.question} />
+        <Options
+          maxLevel={maxLevel}
+          options={question.options}
+          answer={question.answer}
+          prize={question.prize}
+        />
+      </div>
     </div>
   );
 };

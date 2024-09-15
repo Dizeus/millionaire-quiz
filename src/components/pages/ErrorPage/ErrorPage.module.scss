@@ -1,0 +1,14 @@
+@import '@/assets/scss/variables.scss';
+
+
+.message{
+  font-size: 28px;
+}
+
+.error{
+  font-size: 24px;
+  span{
+    color: $red;
+    word-break: break-all;
+  }
+}

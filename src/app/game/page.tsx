@@ -1,18 +1,10 @@
-import GameLayout from "@/components/layouts/GameLayout/GameLayout";
-import { IQuestion } from "@/utils/types/IQuestion";
+import QuestionService from "../../services/question-service";
+import GamePage from "@/components/pages/GamePage/GamePage";
 
+const Game = async () => {
+  const questions = await QuestionService.getQuestions();
 
-
-const GamePage = async () => {
-  const { questions } = await import("@/assets/config/config.json", {
-    assert: {
-      type: "json",
-    },
-  });
-
-  return (
-    <GameLayout questions={questions as IQuestion[]}/>
-  );
+  return <GamePage questions={questions} />;
 };
 
-export default GamePage;
+export default Game;
