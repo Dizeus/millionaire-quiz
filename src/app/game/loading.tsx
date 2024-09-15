@@ -4,9 +4,9 @@ import CenteredLayout from "@/components/layouts/CenteredLayout/CenteredLayout";
 const Loading = () => {
   return (
     <CenteredLayout>
-      <Spinner/>
+      <Spinner />
     </CenteredLayout>
   );
-}
+};
 
 export default Loading;

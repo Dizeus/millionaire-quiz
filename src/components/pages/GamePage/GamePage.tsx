@@ -17,7 +17,7 @@ const GamePage = ({ questions }: GamePageProps) => {
   useEffect(() => {
     setCurrLevel({ index: 0, prize: 0 });
   }, []);
-  
+
   return (
     <div className={style.wrapper}>
       <Burger active={active} setActive={setActive} />

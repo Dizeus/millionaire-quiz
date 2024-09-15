@@ -104,14 +104,14 @@ body {
 .title {
   font-size: 56px;
   margin-bottom: 64px;
-  max-width: 470px;  
+  max-width: 470px;
 }
 
 @media (max-width: $smDevice) {
-    .title{
-      font-size: 32px;
-      max-width: 310px;
-      margin: 0 auto;
-      margin-bottom: 64px;
-    }
+  .title {
+    font-size: 32px;
+    max-width: 310px;
+    margin: 0 auto;
+    margin-bottom: 64px;
   }
+}

@@ -10,7 +10,7 @@ interface LevelMenuProps {
 
 const LevelMenu = ({ levels, currLevel, active }: LevelMenuProps) => {
   return (
-    <aside className={`${style.menu} ${active?style.menu_active:''}`}>
+    <aside className={`${style.menu} ${active ? style.menu_active : ""}`}>
       {levels.map((level, i) => (
         <Level
           status={getLevelStatus(i, currLevel)}

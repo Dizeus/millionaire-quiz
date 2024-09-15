@@ -1,6 +1,6 @@
-@import '@/assets/scss/variables.scss';
+@import "@/assets/scss/variables.scss";
 
-.button{
+.button {
   width: 296px;
   height: 64px;
   display: flex;
@@ -13,19 +13,18 @@
   font-weight: 600;
   transition: background-color 0.3s ease-out;
   @media (hover: hover) {
-    &:hover{
+    &:hover {
       background-color: $orangeHover;
     }
   }
-  
 
-  &:active{
+  &:active {
     background-color: $orangePressed;
   }
 }
 
 @media screen and (max-width: $smDevice) {
-  .button{
+  .button {
     width: 100%;
   }
 }

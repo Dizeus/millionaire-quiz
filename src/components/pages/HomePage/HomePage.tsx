@@ -11,5 +11,5 @@ const HomePage = () => {
       </HandLayout>
     </div>
   );
-}
+};
 export default HomePage;

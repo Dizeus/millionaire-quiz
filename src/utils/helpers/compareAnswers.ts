@@ -7,5 +7,7 @@ export const compareAnswers = (answer: IAnswer, trials: string[]) => {
   } else if (answer.operator === Operators.OR) {
     return trials.every((trial) => answer.letters.includes(trial));
   }
-  return JSON.stringify(answer.letters.sort()) === JSON.stringify(trials.sort());
+  return (
+    JSON.stringify(answer.letters.sort()) === JSON.stringify(trials.sort())
+  );
 };

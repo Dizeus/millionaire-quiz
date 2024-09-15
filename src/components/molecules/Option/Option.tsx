@@ -9,11 +9,16 @@ interface OptionProps {
   handleClickOption: (l: string) => void;
 }
 
-const Option = ({ option, status, handleClickOption, isCheck }: OptionProps) => {
+const Option = ({
+  option,
+  status,
+  handleClickOption,
+  isCheck,
+}: OptionProps) => {
   return (
     <button
       disabled={isCheck}
-      onClick={()=>handleClickOption(option.letter)}
+      onClick={() => handleClickOption(option.letter)}
       className={`${style.container} ${style[status]}`}
     >
       <div className={style.border}>

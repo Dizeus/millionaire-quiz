@@ -19,7 +19,7 @@ const LevelContextDefaultValue: LevelContextType = {
 };
 
 export const LevelContext = createContext<LevelContextType>(
-  LevelContextDefaultValue
+  LevelContextDefaultValue,
 );
 
 export default function LevelContextProvider({
@@ -28,7 +28,7 @@ export default function LevelContextProvider({
   children: ReactNode;
 }) {
   const [currLevel, setCurrLevel] = useState<ILevel>({ index: 0, prize: 0 });
-  
+
   return (
     <LevelContext.Provider
       value={{

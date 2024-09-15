@@ -3,10 +3,9 @@ import { ReactNode } from "react";
 
 interface ButtonProps {
   children: ReactNode;
-  handleOnClick: ()=>void;
+  handleOnClick: () => void;
 }
 const Button = ({ children, handleOnClick }: ButtonProps) => {
-
   return (
     <button onClick={handleOnClick} className={style.button}>
       {children}
