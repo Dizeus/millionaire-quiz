@@ -107,7 +107,7 @@ body {
   max-width: 470px;  
 }
 
-@media screen and (max-width: $smDevice) {
+@media (max-width: $smDevice) {
     .title{
       font-size: 32px;
       max-width: 310px;

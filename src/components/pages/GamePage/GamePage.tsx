@@ -5,15 +5,19 @@ import { IQuestion } from "@/utils/types/IQuestion";
 import Game from "@/components/organisms/Game/Game";
 import useLevel from "@/utils/hooks/useLevel";
 import Burger from "@/components/atoms/Burger/Burger";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface GamePageProps {
   questions: IQuestion[];
 }
 const GamePage = ({ questions }: GamePageProps) => {
-  const { currLevel } = useLevel();
+  const { currLevel, setCurrLevel } = useLevel();
   const [active, setActive] = useState<boolean>(false);
 
+  useEffect(() => {
+    setCurrLevel({ index: 0, prize: 0 });
+  }, []);
+  
   return (
     <div className={style.wrapper}>
       <Burger active={active} setActive={setActive} />

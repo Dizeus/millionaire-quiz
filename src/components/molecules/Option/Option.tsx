@@ -1,9 +1,10 @@
+import { OptionStatus } from "@/utils/types/enums/OptionStatus";
 import style from "./Option.module.scss";
 import { IOption } from "@/utils/types/IOption";
 
 interface OptionProps {
   option: IOption;
-  status: string | null;
+  status: OptionStatus;
   isCheck: boolean;
   handleClickOption: (l: string) => void;
 }
@@ -13,7 +14,7 @@ const Option = ({ option, status, handleClickOption, isCheck }: OptionProps) => 
     <button
       disabled={isCheck}
       onClick={()=>handleClickOption(option.letter)}
-      className={`${style.container} ${style[`container_${status}`]}`}
+      className={`${style.container} ${style[status]}`}
     >
       <div className={style.border}>
         <div className={style.content}>

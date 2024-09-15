@@ -9,8 +9,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Millionaire Quiz",
-  description: "Quiz",
+  title: {
+    default: "Millionaire Quiz",
+    template: "Millionaire Quiz | %s",
+  },
+  description: "Answer questions - win one million! Millionaire Quiz",
 };
 
 export default function RootLayout({

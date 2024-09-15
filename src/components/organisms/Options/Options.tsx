@@ -8,7 +8,7 @@ import { getOptionStatus } from "@/utils/helpers/getOptionStatus";
 import useLevel from "@/utils/hooks/useLevel";
 import { useRouter } from "next/navigation";
 import { Operators } from "@/utils/types/enums/Operators";
-import { AFTER_ANSWER_DELAY } from "@/assets/config/delay";
+import { AFTER_ANSWER_DELAY } from "@/assets/constants/delay";
 
 interface OptionsProps {
   options: IOption[];

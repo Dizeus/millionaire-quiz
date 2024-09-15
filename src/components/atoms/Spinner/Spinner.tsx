@@ -10,7 +10,6 @@ const Spinner = () => {
         sizes="(max-width: 768px) 70vw, (max-width: 1200px)
       50vw, 33vw"
         style={{ objectFit: "contain" }}
-        priority
       />
   );
 };

@@ -1,28 +1,22 @@
 @import "@/assets/scss/variables.scss";
+@import "@/assets/scss/rounded-hexagon-mixin.scss";
 
-$levelHexagonWidth: 240px;
-$levelHexagonHeight: 40px;
+$hexagonWidth: 80%;
+$hexagonHeight: 40px;
+$hexagonHeightSm: 32px;
 $borderWidth: 1px;
 
 .container {
   width: 100%;
   position: relative;
-  &::before {
-    content: "";
-    width: 100%;
-    border-bottom: solid 1px $grey;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(0, -150%);
-  }
+  @include hexagonDimensions($hexagonWidth, $hexagonHeight, $borderWidth);
 
   &.active {
     color: $orange;
     &::before {
       border-bottom: solid 1px $orange;
     }
-    .border{
+    .border {
       background: $orange;
     }
   }
@@ -30,131 +24,24 @@ $borderWidth: 1px;
   &.passed {
     color: $grey;
   }
+
+  @media (max-width: $smDevice) {
+    @include hexagonDimensions($hexagonWidth, $hexagonHeightSm, $borderWidth);
+  }
 }
 
 .border {
-  position: relative;
-  margin: 0 auto;
-  width: $levelHexagonWidth;
-  height: $levelHexagonHeight;
-  background: $grey;
-  clip-path: polygon(
-    6.124% 7.064%,
-    6.124% 7.064%,
-    6.3% 5.911%,
-    6.494% 4.862%,
-    6.703% 3.92%,
-    6.927% 3.09%,
-    7.163% 2.375%,
-    7.411% 1.782%,
-    7.668% 1.312%,
-    7.933% 0.972%,
-    8.204% 0.765%,
-    8.48% 0.694%,
-    91.52% 0.694%,
-    91.52% 0.694%,
-    91.796% 0.765%,
-    92.067% 0.972%,
-    92.332% 1.312%,
-    92.589% 1.782%,
-    92.837% 2.375%,
-    93.073% 3.09%,
-    93.297% 3.92%,
-    93.506% 4.862%,
-    93.7% 5.911%,
-    93.876% 7.064%,
-    99.839% 50%,
-    93.876% 92.936%,
-    93.876% 92.936%,
-    93.7% 94.089%,
-    93.506% 95.138%,
-    93.297% 96.08%,
-    93.073% 96.91%,
-    92.837% 97.625%,
-    92.589% 98.218%,
-    92.332% 98.688%,
-    92.067% 99.028%,
-    91.796% 99.235%,
-    91.52% 99.306%,
-    8.48% 99.306%,
-    8.48% 99.306%,
-    8.204% 99.235%,
-    7.933% 99.028%,
-    7.668% 98.688%,
-    7.411% 98.218%,
-    7.163% 97.625%,
-    6.927% 96.91%,
-    6.703% 96.08%,
-    6.494% 95.138%,
-    6.3% 94.089%,
-    6.124% 92.936%,
-    0.16% 50%,
-    6.124% 7.064%
-  );
+  max-width: 300px;
 }
 
 .content {
-  position: absolute;
-  top: $borderWidth;
-  left: $borderWidth;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc($levelHexagonWidth - #{$borderWidth * 2});
-  height: calc($levelHexagonHeight - #{$borderWidth * 2});
   font-size: 20px;
-  clip-path: polygon(
-    6.124% 7.064%,
-    6.124% 7.064%,
-    6.3% 5.911%,
-    6.494% 4.862%,
-    6.703% 3.92%,
-    6.927% 3.09%,
-    7.163% 2.375%,
-    7.411% 1.782%,
-    7.668% 1.312%,
-    7.933% 0.972%,
-    8.204% 0.765%,
-    8.48% 0.694%,
-    91.52% 0.694%,
-    91.52% 0.694%,
-    91.796% 0.765%,
-    92.067% 0.972%,
-    92.332% 1.312%,
-    92.589% 1.782%,
-    92.837% 2.375%,
-    93.073% 3.09%,
-    93.297% 3.92%,
-    93.506% 4.862%,
-    93.7% 5.911%,
-    93.876% 7.064%,
-    99.839% 50%,
-    93.876% 92.936%,
-    93.876% 92.936%,
-    93.7% 94.089%,
-    93.506% 95.138%,
-    93.297% 96.08%,
-    93.073% 96.91%,
-    92.837% 97.625%,
-    92.589% 98.218%,
-    92.332% 98.688%,
-    92.067% 99.028%,
-    91.796% 99.235%,
-    91.52% 99.306%,
-    8.48% 99.306%,
-    8.48% 99.306%,
-    8.204% 99.235%,
-    7.933% 99.028%,
-    7.668% 98.688%,
-    7.411% 98.218%,
-    7.163% 97.625%,
-    6.927% 96.91%,
-    6.703% 96.08%,
-    6.494% 95.138%,
-    6.3% 94.089%,
-    6.124% 92.936%,
-    0.16% 50%,
-    6.124% 7.064%
-  );
+  font-weight: 400;
+  @media (max-width: $smDevice) {
+    font-size: 14px;
+  }
 }

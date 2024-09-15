@@ -1,21 +1,18 @@
+'use client'
 import HandLayout from "@/components/layouts/HandLayout/HandLayout";
 import style from "./GameOverPage.module.scss";
 import NavigationButton from "@/components/molecules/NavigationButton/NavigationButton";
-import { useEffect } from "react";
 import useLevel from "@/utils/hooks/useLevel";
+import { getNumberWithCommas } from "@/utils/helpers/getNumberWithCommas";
 
 const GameOverPage = () => {
-  const { currLevel, setCurrLevel } = useLevel();
-
-  useEffect(() => {
-    return () => setCurrLevel({ index: 0, prize: 0 });
-  }, []);
+  const { currLevel } = useLevel();
 
   return (
     <HandLayout>
       <div>
         <h4 className={style.subtitile}>Total score:</h4>
-        <h1 className="title">${currLevel.prize} earned</h1>
+        <h1 className="title">${getNumberWithCommas(currLevel.prize)} earned</h1>
       </div>
       <NavigationButton route="/game">Try Again</NavigationButton>
     </HandLayout>
