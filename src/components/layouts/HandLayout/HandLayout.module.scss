@@ -5,21 +5,20 @@
   justify-content: center;
   align-items: center;
   column-gap: 10vw;
-  min-height: 100vh;
+  height: 100vh;
   padding: 20px 80px 20px 80px;
-  @media screen and (max-width: $smDevice) {
-    padding: 80px 18px 48px 18px;
-  }
 }
 .image-container {
   text-align: center;
 }
 .image {
   width: 100%;
+  height: 100%;
 }
 
-@media screen and (max-width: $smDevice) {
+@media (max-width: $smDevice) {
   .container {
+    padding: 48px 18px;
     flex-direction: column;
     row-gap: 42px;
   }
@@ -28,7 +27,10 @@
     min-width: 150px;
     max-width: 80%;
   }
-
+  .image-container {
+    text-align: center;
+    flex: 1 1 250px;
+  }
   .content {
     width: 100%;
     flex: 1 1 auto;
